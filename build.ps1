@@ -1,4 +1,4 @@
-﻿param([String]$slnPath=".\nugetDemo.sln",[string]$vsFolderName="nugetDemo")
+﻿param([String]$slnPath=".\Calculator.Web.sln",[string]$vsFolderName="Calculator.Web")
 
 $slnContent=Get-Content $slnPath
 $folderLine=$slnContent | ?{$_.Contains("2150E333-8FDC-42A3-9474-1A3956D46DE8")} | ?{$_.Contains($VsFolderName)}
